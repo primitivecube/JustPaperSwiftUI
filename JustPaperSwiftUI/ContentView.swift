@@ -55,6 +55,22 @@
 // Define embedded DSL (design specific languages) - like HTML
 // the DSL will be recognised in XCode, and can even be implemented with swift language
 
+// MARK: App Store Review
+// minimum functionality requirements
+// see Humuan Interface guidelines
+// Functionality: must meet Privacy requirements for Data on Device
+// End User needs to know what is going on with their Data, such as full disclosure on syncing with cloud or other devices
+// First Time Devs: Must be production ready
+// Can submit a Free App, and then add in-app purchase, or pro version later
+// penmanship
+// Submit to Test Flight before public ipad OS is ready
+// Once ipadOS is ready, then submit to App Store Review
+
+// MARK: SwiftUI Lab @ 1.00pm June 4
+//
+
+
+
 
 import SwiftUI
 
@@ -63,6 +79,22 @@ struct ContentView : View {
         Text("Hello World")
     }
 }
+
+// TODO: Pen Palette
+// TODO: Highlighter Palette
+// TODO: SF Symbols for Palette and Buttons
+// TODO: Show/Hide Palette based on Pencil Interaction
+// TODO: Lined Paper Canvas
+// TODO: Canvas Selector
+// TODO: New Pad
+// TODO: Delete Pad
+// TODO: Pad Gallery
+// TODO: Data Flow?
+// TODO: Local Persistent Data
+// TODO: Syncronise Data across Devices
+// TODO: PencilKit Implementation
+// TODO: Export as various formats (image, PDF flat, PDF with markup)
+
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
