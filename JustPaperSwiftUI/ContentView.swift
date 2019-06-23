@@ -73,27 +73,55 @@
 
 
 import SwiftUI
+//import PencilKit
 
 struct ContentView : View {
+    @State var pencilIsInteracting = false
+    
     var body: some View {
-        Text("Hello World")
+        VStack {
+            Text("Hello World")
+            if !pencilIsInteracting {
+                Text("Tools")
+            }
+        }
+        
     }
 }
 
 // TODO: Pen Palette
+// Each componet is a stack
+// See 'interfacing with ui kit'j
+// See is uiviewrepresentable
+// UI page control
+
 // TODO: Highlighter Palette
 // TODO: SF Symbols for Palette and Buttons
+// SF symbols app...mac app
 // TODO: Show/Hide Palette based on Pencil Interaction
+// use .animation
 // TODO: Lined Paper Canvas
+// vector graphic - see swiftUI vector graphics tools
 // TODO: Canvas Selector
+//...
 // TODO: New Pad
+// adding a new page in your model. Update your model, the view will follow.
 // TODO: Delete Pad
+// use SwiftUI Button with an action to interact with the model (same for add...)
 // TODO: Pad Gallery
+// UICollection View (original, not in swiftUI)
 // TODO: Data Flow?
+// See Combine...
 // TODO: Local Persistent Data
+// See Combine...
 // TODO: Syncronise Data across Devices
+// UI Collection view where UI Views are SWift UI views...
 // TODO: PencilKit Implementation
+// see demo
 // TODO: Export as various formats (image, PDF flat, PDF with markup)
+// TODO: Darkmode support
+// Swift UI has an 'environment' with environment values
+
 
 
 #if DEBUG
