@@ -79,13 +79,7 @@ struct ContentView : View {
     @State var pencilIsInteracting = false
     
     var body: some View {
-        VStack {
-            Text("Hello World")
-            if !pencilIsInteracting {
-                Text("Tools")
-            }
-        }
-        
+        RuledLines()
     }
 }
 
