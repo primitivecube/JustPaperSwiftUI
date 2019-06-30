@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import PencilKit
 
 struct MarginLines : View {
     var body: some View {
