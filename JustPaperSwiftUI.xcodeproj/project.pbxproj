@@ -16,6 +16,7 @@
 		111BF8F322A6CC4100249BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111BF8F122A6CC4100249BA5 /* LaunchScreen.storyboard */; };
 		111BF8FE22A6CC4100249BA5 /* JustPaperSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BF8FD22A6CC4100249BA5 /* JustPaperSwiftUITests.swift */; };
 		111BF90922A6CC4100249BA5 /* JustPaperSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BF90822A6CC4100249BA5 /* JustPaperSwiftUIUITests.swift */; };
+		112313A822C831800086A382 /* RuledPaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112313A722C831800086A382 /* RuledPaper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		111BF90422A6CC4100249BA5 /* JustPaperSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustPaperSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111BF90822A6CC4100249BA5 /* JustPaperSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustPaperSwiftUIUITests.swift; sourceTree = "<group>"; };
 		111BF90A22A6CC4100249BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112313A722C831800086A382 /* RuledPaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuledPaper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		111BF8E222A6CC3F00249BA5 /* JustPaperSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				112313A622C831540086A382 /* Supporting Views */,
 				111BF8E322A6CC3F00249BA5 /* AppDelegate.swift */,
 				111BF8E522A6CC3F00249BA5 /* SceneDelegate.swift */,
 				111BF8EA22A6CC3F00249BA5 /* ContentView.swift */,
@@ -137,6 +140,14 @@
 				111BF90A22A6CC4100249BA5 /* Info.plist */,
 			);
 			path = JustPaperSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		112313A622C831540086A382 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				112313A722C831800086A382 /* RuledPaper.swift */,
+			);
+			path = "Supporting Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 				111BF8E422A6CC3F00249BA5 /* AppDelegate.swift in Sources */,
 				111BF8EB22A6CC3F00249BA5 /* ContentView.swift in Sources */,
 				111BF8E622A6CC3F00249BA5 /* SceneDelegate.swift in Sources */,
+				112313A822C831800086A382 /* RuledPaper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
