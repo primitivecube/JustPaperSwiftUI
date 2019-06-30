@@ -9,19 +9,17 @@
 import SwiftUI
 
 struct RuledLines : View {
-//    static let symbolColor = Color(red: 79.0 / 255, green: 79.0 / 255, blue: 191.0 / 255)
-    
     var body: some View {
         GeometryReader { geometry in
             Path { path in
-                let width = min(geometry.size.width, geometry.size.height)
+                let width = geometry.size.width
+                let height = geometry.size.height
                 let lineSpacing: CGFloat = 37
-                let horizontalLines = geometry.size.height / lineSpacing
                 
                 var horizontalLineY = lineSpacing*2
                 
-                while Int(horizontalLineY) < Int(geometry.size.height) {
-                    if (horizontalLineY + lineSpacing) < geometry.size.height {
+                while Int(horizontalLineY) < Int(height) {
+                    if (horizontalLineY + lineSpacing) < height {
                         path.addLines([
                             CGPoint(x: 0, y: horizontalLineY),
                             CGPoint(x: width, y: horizontalLineY),
@@ -41,7 +39,6 @@ struct RuledLines : View {
             .fill(Color.blue)
         }
         .background(Color.white)
-        
     }
 }
 
