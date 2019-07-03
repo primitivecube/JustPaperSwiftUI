@@ -20,6 +20,8 @@
 		11AA729B22C856070084C555 /* MarginLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA729A22C856070084C555 /* MarginLines.swift */; };
 		11AA72A022C85F550084C555 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA729F22C85F550084C555 /* Notes.swift */; };
 		11AA72A222C897A80084C555 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA72A122C897A80084C555 /* Canvas.swift */; };
+		11AA72A822CC7AE90084C555 /* PencilKitUIViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA72A722CC7AE90084C555 /* PencilKitUIViewControllerRepresentable.swift */; };
+		11AA72AC22CC7F880084C555 /* PencilKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA72AB22CC7F880084C555 /* PencilKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		11AA729A22C856070084C555 /* MarginLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginLines.swift; sourceTree = "<group>"; };
 		11AA729F22C85F550084C555 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		11AA72A122C897A80084C555 /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		11AA72A722CC7AE90084C555 /* PencilKitUIViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitUIViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		11AA72AB22CC7F880084C555 /* PencilKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				112313A722C831800086A382 /* RuledLines.swift */,
 				11AA729A22C856070084C555 /* MarginLines.swift */,
 				11AA72A122C897A80084C555 /* Canvas.swift */,
+				11AA72A722CC7AE90084C555 /* PencilKitUIViewControllerRepresentable.swift */,
+				11AA72AB22CC7F880084C555 /* PencilKitView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -292,9 +298,11 @@
 			files = (
 				111BF8E922A6CC3F00249BA5 /* JustPaperSwiftUI.xcdatamodeld in Sources */,
 				11AA729B22C856070084C555 /* MarginLines.swift in Sources */,
+				11AA72A822CC7AE90084C555 /* PencilKitUIViewControllerRepresentable.swift in Sources */,
 				111BF8E422A6CC3F00249BA5 /* AppDelegate.swift in Sources */,
 				11AA72A222C897A80084C555 /* Canvas.swift in Sources */,
 				111BF8EB22A6CC3F00249BA5 /* ContentView.swift in Sources */,
+				11AA72AC22CC7F880084C555 /* PencilKitView.swift in Sources */,
 				111BF8E622A6CC3F00249BA5 /* SceneDelegate.swift in Sources */,
 				112313A822C831800086A382 /* RuledLines.swift in Sources */,
 				11AA72A022C85F550084C555 /* Notes.swift in Sources */,
