@@ -37,6 +37,7 @@ struct RuledLines : View {
                 
             }
             .fill(Color.blue)
+            
         }
         .background(Color.white)
     }
