@@ -12,6 +12,7 @@ struct ContentView : View {
             // PencilKit integration needs work
             RuledLines()
             MarginLines()
+            SFSymbolsCreative() // affected by dark mode, they turn white. disable dark mode? or enable for background color?
         }
     }
 }

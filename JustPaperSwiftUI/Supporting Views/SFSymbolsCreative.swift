@@ -10,15 +10,11 @@ import SwiftUI
 
 struct SFSymbolsCreative : View {
     var body: some View {
-        ZStack{
-            RuledLines()
-            MarginLines()
-            VStack{
-                SFSymbolsActionPallete()
-                SFSymbolsColorPallete()
-                SFSymbolsColorPallete()
-            }.padding(.leading)
-        }
+        VStack{
+            SFSymbolsActionPallete()
+            SFSymbolsColorPallete()
+            SFSymbolsColorPallete()
+        }.padding(.leading)
     }
 }
 
