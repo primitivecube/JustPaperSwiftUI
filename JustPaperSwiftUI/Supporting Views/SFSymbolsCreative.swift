@@ -21,10 +21,16 @@ struct SFSymbolsCreative : View {
                 .padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))
             
             VStack{
+                SFSymbolsDeletePallete()
+                Spacer()
+                }
+                .padding(.init(top: 37*6+5, leading: 20, bottom: 0, trailing: 0))
+            
+            VStack{
                 SFSymbolsActionPallete()
                 Spacer()
             }
-            .padding(.init(top: 37*3, leading: 20, bottom: 0, trailing: 0))
+            .padding(.init(top: 37*3+2, leading: 20, bottom: 0, trailing: 0))
 
             VStack{
                 SFSymbolsColorPallete()
@@ -88,9 +94,20 @@ struct SFSymbolsActionPallete : View {
                 Image(systemName: "arrow.uturn.right").resizable().frame(width: symbolWidth, height: symbolHeight)
                 Spacer()
             }
+        }
+    }
+}
+
+struct SFSymbolsDeletePallete : View {
+    
+    let symbolWidth:CGFloat = 30
+    let symbolHeight:CGFloat = 30
+    
+    var body: some View {
+        VStack{
             HStack {
                 Image(systemName: "delete.right").resizable().frame(width: symbolWidth, height: symbolHeight)
-            Spacer()
+                Spacer()
             }
         }
     }
