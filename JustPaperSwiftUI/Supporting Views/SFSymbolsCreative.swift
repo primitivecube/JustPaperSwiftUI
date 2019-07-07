@@ -10,36 +10,63 @@ import SwiftUI
 
 struct SFSymbolsCreative : View {
     var body: some View {
-            VStack(alignment: .leading){
+        ZStack {
+            RuledLines()
+            MarginLines()
+            
+            VStack{
+                SFSymbolsContextPallete()
+                Spacer()
+            }
+                .padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))
+            
+            VStack{
                 SFSymbolsActionPallete()
-                SFSymbolsColorPallete()
+                Spacer()
+            }
+            .padding(.init(top: 37*3, leading: 20, bottom: 0, trailing: 0))
+
+            VStack{
                 SFSymbolsColorPallete()
                 Spacer()
-        }.padding(.leading)
+            }
+            .padding(.init(top: 37*8, leading: 20, bottom: 0, trailing: 0))
+            
+            VStack{
+                SFSymbolsColorPallete()
+                Spacer()
+
+            }
+            .padding(.init(top: 37*15, leading: 20, bottom: 0, trailing: 0))
+        }
     }
 }
 
 struct SFSymbolsColorPallete : View {
+    let symbolWidth:CGFloat = 30
+    let symbolHeight:CGFloat = 30
+    
     var body: some View {
+       
         VStack{
             HStack {
-                Image(systemName: "square.and.pencil")
+                Image(systemName: "square.and.pencil").resizable().frame(width: symbolWidth, height: symbolHeight)
                 Spacer()
             }
             HStack {
-                Image(systemName: "square")
+                Image(systemName: "square").resizable().frame(width: symbolWidth, height: symbolHeight)
                 Spacer()
             }
             HStack {
-                Image(systemName: "square")
+                Image(systemName: "square").resizable().frame(width: symbolWidth, height: symbolHeight)
                 Spacer()
             }
             HStack {
-                Image(systemName: "square")
+                Image(systemName: "square").resizable().frame(width: symbolWidth, height: symbolHeight)
                 Spacer()
             }
             HStack {
-                Image(systemName: "plus.square")
+                Image(systemName: "plus.square").resizable().frame(width: symbolWidth, height: symbolHeight)
                 Spacer()
             }
         }
@@ -47,28 +74,42 @@ struct SFSymbolsColorPallete : View {
 }
 
 struct SFSymbolsActionPallete : View {
+    
+    let symbolWidth:CGFloat = 30
+    let symbolHeight:CGFloat = 30
+    
     var body: some View {
         VStack{
             HStack {
-                Image(systemName: "sidebar.left")
+                Image(systemName: "arrow.uturn.left").resizable().frame(width: symbolWidth, height: symbolHeight)
                 Spacer()
             }
             HStack {
-                Image(systemName: "chevron.left")
+                Image(systemName: "arrow.uturn.right").resizable().frame(width: symbolWidth, height: symbolHeight)
                 Spacer()
             }
             HStack {
-                Image(systemName: "arrow.uturn.left")
-                Spacer()
-            }
-            HStack {
-                Image(systemName: "arrow.uturn.right")
-                Spacer()
-            }
-            HStack {
-                Image(systemName: "delete.right")
-                Spacer()
+                Image(systemName: "delete.right").resizable().frame(width: symbolWidth, height: symbolHeight)
             Spacer()
+            }
+        }
+    }
+}
+
+struct SFSymbolsContextPallete : View {
+    
+    let symbolWidth:CGFloat = 30
+    let symbolHeight:CGFloat = 30
+    
+    var body: some View {
+        VStack{
+            HStack {
+                Image(systemName: "sidebar.left").resizable().frame(width: symbolWidth, height: symbolHeight)
+                Spacer()
+            }
+            HStack {
+                Image(systemName: "chevron.left").resizable().frame(width: symbolWidth, height: symbolHeight)
+                Spacer()
             }
         }
     }
