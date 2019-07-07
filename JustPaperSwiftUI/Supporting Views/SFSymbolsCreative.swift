@@ -10,24 +10,37 @@ import SwiftUI
 
 struct SFSymbolsCreative : View {
     var body: some View {
-        VStack{
-            SFSymbolsActionPallete()
-            SFSymbolsColorPallete()
-            SFSymbolsColorPallete()
+            VStack(alignment: .leading){
+                SFSymbolsActionPallete()
+                SFSymbolsColorPallete()
+                SFSymbolsColorPallete()
+                Spacer()
         }.padding(.leading)
     }
 }
 
 struct SFSymbolsColorPallete : View {
     var body: some View {
-        GeometryReader { geometry in
-            VStack{
+        VStack{
+            HStack {
                 Image(systemName: "square.and.pencil")
+                Spacer()
+            }
+            HStack {
                 Image(systemName: "square")
+                Spacer()
+            }
+            HStack {
                 Image(systemName: "square")
+                Spacer()
+            }
+            HStack {
                 Image(systemName: "square")
-                Image(systemName: "square")
+                Spacer()
+            }
+            HStack {
                 Image(systemName: "plus.square")
+                Spacer()
             }
         }
     }
@@ -35,13 +48,27 @@ struct SFSymbolsColorPallete : View {
 
 struct SFSymbolsActionPallete : View {
     var body: some View {
-        GeometryReader { geometry in
-            VStack{
+        VStack{
+            HStack {
                 Image(systemName: "sidebar.left")
+                Spacer()
+            }
+            HStack {
                 Image(systemName: "chevron.left")
+                Spacer()
+            }
+            HStack {
                 Image(systemName: "arrow.uturn.left")
+                Spacer()
+            }
+            HStack {
                 Image(systemName: "arrow.uturn.right")
+                Spacer()
+            }
+            HStack {
                 Image(systemName: "delete.right")
+                Spacer()
+            Spacer()
             }
         }
     }
