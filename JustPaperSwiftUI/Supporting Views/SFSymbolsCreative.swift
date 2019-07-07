@@ -50,7 +50,7 @@ struct SFSymbolsActionPallete : View {
 #if DEBUG
 struct SFSymbolsCreative_Previews : PreviewProvider {
     static var previews: some View {
-        ForEach(["iPad Pro (11-inch)", "iPad Pro (12.9-inch) (3rd generation)", "iPhone SE"].identified(by: \.self)) { deviceName in SFSymbolsCreative()
+        ForEach(["iPad Pro (11-inch)"].identified(by: \.self)) { deviceName in SFSymbolsCreative()
             .previewDevice(PreviewDevice(rawValue: deviceName))
             .previewDisplayName(deviceName)
         }
